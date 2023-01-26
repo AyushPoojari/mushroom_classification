@@ -1,7 +1,7 @@
 import pandas as pd
-from sensor.logger import logging
-from sensor.exception import MushroomException
-from sensor.config import mongo_client
+from mushroom.logger import logging
+from mushroom.exception import MushroomException
+from mushroom.config import mongo_client
 import os,sys
 import yaml
 import dill
