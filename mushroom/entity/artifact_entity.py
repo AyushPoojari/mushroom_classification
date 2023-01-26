@@ -8,7 +8,8 @@ class DataIngestionArtifact:
 
 @dataclass
 class DataValidationArtifact:
-    pass
+    report_file_path:str
+
     
 @dataclass
 class DataTransformationArtifact:

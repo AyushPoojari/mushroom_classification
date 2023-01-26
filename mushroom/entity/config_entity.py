@@ -2,6 +2,7 @@ import os,sys
 from mushroom.exception import MushroomException
 from mushroom.logger import logging
 from datetime import datetime
+import yaml
 
 FILE_NAME = "mushroom.csv"
 TRAIN_FILE_NAME = "train.csv"
@@ -38,7 +39,12 @@ class DataIngestionConfig:
             raise MushroomException(e,sys)     
 
 class DataValidationConfig:
-    pass
+    def __init__(self,training_pipeline_config:TrainingPipelineConfig):
+        self.data_validation_dir = os.path.join(training_pipeline_config.artifact_dir , "data_validation")
+        self.report_file_path=os.path.join(self.data_validation_dir, "report.yaml")
+        self.missing_threshold:float = 0.2
+        self.base_file_path = os.path.join("mushrooms.csv")
+
 
 class ModelTrainerConfig:
     pass
