@@ -15,8 +15,8 @@ def error_message_detail(error, error_detail: sys):
     return error_message
 
 
-#Inheriting Exception for our custom Sendor Exception
-class SensorException(Exception):
+#Inheriting Exception for our custom Mushroom Classification Exception
+class MushroomException(Exception):
     def __init__(self,error_message, error_detail:sys):
         self.error_message = error_message_detail(
             error_message, error_detail=error_detail)
