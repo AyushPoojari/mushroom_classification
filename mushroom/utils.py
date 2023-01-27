@@ -37,7 +37,7 @@ def write_yaml_file(file_path,data:dict):
         with open(file_path,"w") as file_writer:
             yaml.dump(data,file_writer)
     except Exception as e:
-        raise SensorException(e, sys)
+        raise MushroomException(e, sys) from e
 
 def convert_columns_float(df:pd.DataFrame,exclude_columns:list)->pd.DataFrame:
     try:
@@ -57,7 +57,7 @@ def save_object(file_path: str, obj: object) -> None:
             dill.dump(obj, file_obj)
         logging.info("Exited the save_object method of MainUtils class")
     except Exception as e:
-        raise SensorException(e, sys) from e
+        raise MushroomException(e, sys) from e
 
 
 def load_object(file_path: str, ) -> object:
@@ -67,7 +67,7 @@ def load_object(file_path: str, ) -> object:
         with open(file_path, "rb") as file_obj:
             return dill.load(file_obj)
     except Exception as e:
-        raise SensorException(e, sys) from e
+        raise MushroomException(e, sys) from e
 
 def save_numpy_array_data(file_path: str, array: np.array):
     """
@@ -81,7 +81,7 @@ def save_numpy_array_data(file_path: str, array: np.array):
         with open(file_path, "wb") as file_obj:
             np.save(file_obj, array)
     except Exception as e:
-        raise SensorException(e, sys) from e
+        raise MushroomException(e, sys) from e
 
 def load_numpy_array_data(file_path: str) -> np.array:
     """
@@ -93,4 +93,4 @@ def load_numpy_array_data(file_path: str) -> np.array:
         with open(file_path, "rb") as file_obj:
             return np.load(file_obj)
     except Exception as e:
-        raise SensorException(e, sys) from e
+        raise MushroomException(e, sys)
