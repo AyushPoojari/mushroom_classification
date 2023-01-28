@@ -4,6 +4,7 @@ mushroom/__init__.py
 mushroom/config.py
 mushroom/exception.py
 mushroom/logger.py
+mushroom/predictor.py
 mushroom/utils.py
 mushroom/components/__init__.py
 mushroom/components/data_ingestion.py
