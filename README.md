@@ -11,9 +11,7 @@ The project classifies the given real time dataset of Mushroom as poisonous or e
 <b>4. Wireframe Document :</b> https://drive.google.com/file/d/1i5KBpkuqi0qn2fUL6OsR1zuRvkQMgYhb/view?usp=sharing<br>
 <b>5. Detailed Project Report (DPR) :</b> https://docs.google.com/presentation/d/1CNH4xVWLbv2C_wn37MA2JpHcfHBB5pAv/edit?usp=share_link&ouid=114650827502086972412&rtpof=true&sd=true <br>
 
-<b>Project Demo Video (Working) :</b>
-<b> Link:</b> https://drive.google.com/file/d/171OOAc4dteUVH5kl83J_H1H02Csfa3pj/view?usp=share_link <br>
-![image](https://github.com/AyushPoojari/mushroom_classification/blob/main/notebook/tools.JPG)
+
 
 <b>ABSTRACT :</b>
 Mushrooms have been consumed since earliest history. The word Mushroom is derived from the French word for Fungi and Mold. Now-a-days, Mushroom are popular valuable food because they are low in calories, carbohydrate, Fat, sodium and also cholesterol free. Besides this, Mushroom provides important nutrients, including selenium, potassium, riboflavin, niacin, Vitamin D, proteins and fiber. All together with a long history as food source. Mushroom are important for their healing capacity and properties in traditional medicine. It has reported beneficial effects for health and treatment of some disease. Many nutraceutical properties are described in Mushroom like cancer and antitumor attributes. Mushroom act as antibacterial, immune system enhancer and cholesterol lowering Agent. Additionally, they are important source of bio-active compounds. This work is a machine learning model that classifies mushrooms into 2 classes: Poisonous and Edible depending on the features of the mushroom. During this machine learning implementation, we are going to see which features are important to predict whether a mushroom is poisonous or edible.
