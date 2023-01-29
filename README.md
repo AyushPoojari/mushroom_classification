@@ -21,7 +21,7 @@ The main goal is to predict which mushroom is poisonous & which is edible.
 
 <b>Tools Used :</b>
 
-![image](https://drive.google.com/drive/u/0/folders/1gZ2L2oNv_QhRDS3XSRlkQb-v4m8C3qP)
+![image](https://github.com/AyushPoojari/mushroom_classification/blob/main/notebook/tools.JPG)
 
 <b>Architecture :</b>
 
